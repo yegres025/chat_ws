@@ -1,0 +1,372 @@
+body {
+  background: url("https://images.wallpaperscraft.ru/image/single/liniya_raznocvetnyy_chernyy_fon_85540_1920x1080.jpg");
+  font-family: Malgun Gothic;
+}
+
+.wrapper {
+  height: 540px;
+  width: 318px;
+  border: 1px solid #b3c297;
+  border-radius: 3px;
+  margin: 220px auto 0;
+}
+
+.container {
+  height: 518px;
+  width: 306px;
+  background-color: #6753721a;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.setting {
+  width: 306px;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  display: flex;
+}
+
+.buttonExit, .buttonSetting, .buttonEntry {
+  width: 98px;
+  height: 32px;
+  text-align: center;
+  color: #b3c297;
+  box-sizing: border-box;
+  background: none;
+  border: 1px solid #b3c297;
+  padding-top: 4px;
+  font-size: 17px;
+  line-height: 19px;
+  text-decoration: none;
+  transition: all 50ms linear;
+}
+
+.buttonExit:active, .buttonEntry:active {
+  width: 80px;
+  height: 28px;
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 14px;
+  transition: all 50ms linear;
+  box-shadow: 0 0 5px 2px #9d7ec7;
+}
+
+.buttonSetting:active {
+  width: 80px;
+  height: 28px;
+  margin-left: 9px;
+  margin-right: 9px;
+  padding-top: 2px;
+  font-size: 14px;
+  transition: all 50ms linear;
+  box-shadow: 0 0 5px 2px #9d7ec7;
+}
+
+.chatSpace {
+  flex-wrap: inherit;
+  min-height: 437px;
+  max-height: 438px;
+  width: 304px;
+  box-sizing: border-box;
+  border: 1px solid #b3c297;
+  flex-direction: column-reverse;
+  display: flex;
+  overflow-y: auto;
+}
+
+.messageSending, .messageDelivered {
+  text-align: right;
+  min-height: 52px;
+  min-width: 139px;
+  max-width: 304px;
+  background-color: #a8b9c4;
+  border-bottom-left-radius: 1.5em 20%;
+  flex-direction: column;
+  margin: 8px;
+  padding-right: 8px;
+  display: block;
+}
+
+.messageDelivered {
+  text-align: left;
+  background-color: #6e8696;
+  border-bottom-right-radius: 1.5em 20%;
+  border-bottom-left-radius: 0;
+  padding-left: 8px;
+}
+
+.message, .messageNew {
+  padding-top: 8px;
+}
+
+.timeMessageLeft, .timeMessageNew {
+  color: #333;
+  text-align: left;
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.timeMessageNew {
+  text-align: right;
+}
+
+.messageSpace {
+  width: 306px;
+  justify-content: space-between;
+  margin-top: 8px;
+  display: flex;
+}
+
+.inputMessageSpace {
+  width: 262px;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #b3c297;
+}
+
+.inputForDelivered {
+  width: 225px;
+  height: 32px;
+  box-sizing: border-box;
+  color: #909e77;
+  background-color: #0000;
+  border: none;
+  outline: none;
+  padding-left: 7px;
+}
+
+.buttonsSpace {
+  height: 33px;
+}
+
+.buttonForDelivered, .smileButton {
+  width: 29px;
+  height: 32px;
+  color: #909e77;
+  box-sizing: border-box;
+  background-color: #0000;
+  border: 1px solid #b3c297;
+}
+
+.smileButton {
+  border: none;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.buttonForDelivered:active {
+  width: 26px;
+  height: 29px;
+  margin-top: .35mm;
+  margin-right: .41mm;
+  font-size: 14px;
+  transition: all 50ms linear;
+  box-shadow: 0 0 5px 2px #9d7ec7;
+}
+
+.popupSettings {
+  width: 273px;
+  height: 170px;
+  background-color: #ffffffbd;
+  border: 1px solid;
+  position: fixed;
+  top: 35%;
+  left: 42%;
+}
+
+.popupBackground {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #000c;
+  transition: all .2s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.popupBackground:target {
+  opacity: 1;
+  visibility: visible;
+  transition: all .2s linear;
+}
+
+.popupTop {
+  justify-content: space-between;
+  padding: 16px 7px 16px 14px;
+  font-size: 16px;
+  display: flex;
+}
+
+.buttonExitPopup {
+  width: 14px;
+  height: 20.82px;
+  background: url("+.eefdcf6b.png");
+  border: none;
+}
+
+.namePopup, .mailPopup {
+  padding-left: 14px;
+}
+
+.nameSpacePopup {
+  width: 245px;
+  justify-content: space-between;
+  margin: 8px 14px 0;
+  display: flex;
+}
+
+.formMailPopup, .formEntryPopup {
+  width: 245px;
+  flex-direction: column;
+  margin-left: 14px;
+  display: flex;
+}
+
+.inputNamePopup, .inputMailPopup, .inputCodePopup {
+  width: 207px;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  padding-left: 8px;
+}
+
+.buttonInPopup {
+  width: 30px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.buttonInPopup:active {
+  width: 26px;
+  height: 29px;
+  margin-top: .35mm;
+  margin-right: .41mm;
+  font-size: 14px;
+  transition: all 50ms linear;
+  box-shadow: 0 0 5px 2px #9d7ec7;
+}
+
+.buttonInPopupAuthorization {
+  width: 120px;
+  height: 34px;
+  background: #fff;
+  border: 1px solid #000;
+  margin-top: 7px;
+  transition: all 50ms linear;
+}
+
+.buttonInPopupAuthorization:active {
+  width: 110px;
+  height: 29px;
+  background: #fff;
+  border: 1px solid #000;
+  margin-top: 7px;
+  margin-left: 5px;
+  transition: all 50ms linear;
+  box-shadow: 0 0 5px 2px #9d7ec7;
+}
+
+.popupGettingCode {
+  width: 30px;
+  height: 26px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+  margin-top: 7px;
+  margin-left: 14px;
+  text-decoration: none;
+  transition: all 50ms linear;
+  display: block;
+}
+
+.popupGettingCode:active {
+  width: 27px;
+  height: 24px;
+  margin-left: 16px;
+  transition: all 50ms linear;
+  box-shadow: 0 0 5px 2px #9d7ec7;
+}
+
+.smileSpace {
+  width: 100%;
+  height: 100%;
+  width: 150px;
+  height: 110px;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 590px;
+  margin-left: 910px;
+  transition: all .2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.smileSpace:target {
+  opacity: 1;
+  visibility: visible;
+  transition: all .2s;
+}
+
+.popupSmile {
+  width: 150px;
+  height: 110px;
+  color: #b3c297;
+  background-color: #8a8f76a6;
+  border: 1px solid #b3c297;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.smilesAnimal {
+  justify-content: space-around;
+  display: flex;
+}
+
+a:last-child {
+  text-decoration: none;
+}
+
+.entryMessage {
+  text-align: center;
+  width: 250px;
+  height: 75px;
+  color: #fff;
+  background: url("https://krasivosti.pro/uploads/posts/2021-04/1617788023_3-p-koshka-oboi-vsratie-koti-3.jpg") center / cover no-repeat;
+  border: 1px solid #b3c297;
+  border-radius: 2px;
+  padding-top: 45px;
+  font-size: 20px;
+  transition: all .6s linear;
+  position: fixed;
+  top: -150px;
+  left: 43.5%;
+}
+
+.entryMessageShow {
+  text-align: center;
+  width: 250px;
+  height: 75px;
+  color: #fff;
+  background: url("https://krasivosti.pro/uploads/posts/2021-04/1617788023_3-p-koshka-oboi-vsratie-koti-3.jpg") center / cover no-repeat;
+  border: 1px solid #b3c297;
+  border-radius: 2px;
+  padding-top: 45px;
+  font-size: 20px;
+  transition: all .6s linear;
+  position: fixed;
+  top: 47px;
+  left: 43.5%;
+  transform: rotateX(360deg);
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */

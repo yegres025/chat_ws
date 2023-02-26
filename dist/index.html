@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.3a01df49.css">
+    <title>Chat</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="container">
+
+            <div class="setting">
+                <a href="#popupSettings" class="buttonSetting">Настройки</a>
+                <a href="#popupAuthorization" class="buttonEntry">Войти</a>
+                <a class="buttonExit">Выйти</a>
+            </div>
+
+            <div href="#" class="chatSpace"> 
+
+                
+                <template class="template">                 
+                        <div class="messageNew"></div>
+                        <div class="timeMessageNew"></div>
+                </template>
+            
+                <template class="template">
+                        <div class="messageNew"></div>
+                        <div class="timeMessageNew"></div>
+                </template>
+
+            </div>
+
+            
+            <form class="messageSpace">
+
+                <div class="inputMessageSpace">
+                    <input class="inputForDelivered" type="text" placeholder="сообщение..">
+                    <a href="#smileSpace" class="smileButton" onclick="event.stopPropagation()">🐨</a>
+                </div>
+                        
+                    <button class="buttonForDelivered">▷</button>
+                    
+            </form>
+
+            
+    </div>    
+
+
+
+    <div id="popupSettings" class="popupBackground">
+    
+        <div class="popupSettings">
+
+            <div class="popupTop">
+                <div>Настройки</div>
+                <a href="#" class="buttonExitPopup"></a>
+            </div>
+
+            <div class="namePopup">Имя в чате</div>
+
+            <form class="nameSpacePopup">
+                <input class="inputNamePopup" type="text" placeholder="Введите ваше имя">
+                <button id="buttonExitInSettings" class="buttonInPopup">▷</button>
+            </form>
+
+        </div>
+
+    </div>
+    
+    <div id="popupAuthorization" class="popupBackground">
+
+        <div class="popupSettings">
+
+            <div class="popupTop">      
+                    <div>Авторизация</div>
+                    <a href="#" class="buttonExitPopup"></a>        
+            </div>
+
+            <form class="formMailPopup">
+                <input class="inputMailPopup" type="text" placeholder="Введите вашу почту">
+                <button class="buttonInPopupAuthorization">Получить код</button>
+            </form>
+                
+                <a class="popupGettingCode" href="#popupEntry">▷</a>
+         
+        </div>
+    </div>
+
+    <div id="popupEntry" class="popupBackground">
+
+        <div class="popupSettings">
+                
+            <div class="popupTop">      
+                <div>Код:</div>
+                <a href="#" class="buttonExitPopup"></a>        
+            </div>
+
+            <form class="formEntryPopup">
+                <input placeholder="Введите код из почты" class="inputCodePopup" type="text">
+                <button id="#" class="buttonInPopupAuthorization">Войти</button>
+            </form>
+
+        </div>    
+
+    </div>
+        
+
+</div>
+
+<div id="smileSpace" class="smileSpace">
+    <div id="'popupSmile" class="popupSmile">
+
+        <div class="smilesAnimal">
+            <div class="smile">🐮</div>
+            <div class="smile">🐭</div>
+            <div class="smile">🐫</div>
+            <div class="smile">🐯</div>
+        </div>
+    
+        <div class="smilesAnimal">
+            <div class="smile">🦒</div>
+            <div class="smile">🐨 </div>
+            <div class="smile">🦇</div>
+            <div class="smile">🦓</div>   
+        </div>
+
+        <div class="smilesAnimal">
+            <div class="smile">🦁</div>
+            <div class="smile">🐻 </div>
+            <div class="smile">🐔</div>
+            <div class="smile">🦋</div> 
+        </div>
+
+        <div class="smilesAnimal">
+            <div class="smile">🐰 </div>
+            <div class="smile">🦝</div>
+            <div class="smile">🦊</div>
+            <div class="smile">🐷</div>
+        </div>
+
+        <div class="smilesAnimal">
+            <div class="smile">🦏</div>
+            <div class="smile">🦄</div> 
+            <div class="smile">🐾</div> 
+            <a href="#">❌</a>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="errors">
+
+    <div class="entryMessage">
+        <div>Введите сообщение</div>
+    </div>
+
+</div>
+
+    <script src="/index.63aff760.js" defer=""></script>
+</body>
+</html>
+
